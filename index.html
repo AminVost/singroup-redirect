@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Auto-redirect to the store after 10 seconds -->
+    <meta http-equiv="refresh" content="10;url=https://singroup.store/">
+    <title>Singroup Store</title>
+    
+    <style>
+        /* Reset default styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        /* Main body layout */
+        body { 
+            font-family: Tahoma, Arial, sans-serif; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3f4f6; 
+            color: #1f2937;
+        }
+        
+        /* Card container layout */
+        .card { 
+            background: #ffffff; 
+            padding: 40px 30px; 
+            border-radius: 16px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05); 
+            text-align: center;
+            max-width: 90%;
+            width: 400px;
+        }
+        
+        .card h2 { margin-bottom: 15px; color: #111827; }
+        .card p { line-height: 1.6; margin-bottom: 25px; font-size: 15px; color: #4b5563; }
+        
+        /* Action button styles */
+        .btn { 
+            display: block; 
+            width: 100%;
+            padding: 15px; 
+            background: #e11d48; 
+            color: #ffffff; 
+            text-decoration: none; 
+            border-radius: 8px; 
+            font-weight: bold;
+            font-size: 16px;
+            transition: background 0.2s;
+        }
+        .btn:hover { background: #be123c; }
+        
+        /* Loading animation styles */
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #e11d48;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="loader"></div>
+        <h2>در حال انتقال به فروشگاه</h2>
+        <p>برای مشاهده صحیح سایت و ثبت سفارش، لطفاً <strong>فیلترشکن (VPN) خود را خاموش کنید</strong> و سپس روی دکمه زیر کلیک کنید.</p>
+        <a href="https://singroup.store/" class="btn">ورود به سایت سین‌گروپ</a>
+    </div>
+</body>
+</html>
