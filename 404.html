@@ -129,6 +129,13 @@
     </div>
 
     <script>
+        // Security check: Only allow requests coming from our specific subdomain
+const allowedDomain = "gateway.singroup.store";
+if (window.location.hostname !== allowedDomain) {
+    // If someone tries to use your GitHub Pages repo with another domain, show an error
+    document.body.innerHTML = "<h1>Unauthorized Access</h1>";
+    throw new Error("Unauthorized domain usage");
+}
         // Configuration
         const targetDomain = "singroup.store";
         
